@@ -1,0 +1,361 @@
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    height: 100%;
+    width:100%;
+    box-sizing: border-box;
+    position: fixed; 
+    
+}
+           /* NAV BAR */
+.nav-container{
+    height:70px;
+    width:100%;
+    box-sizing: border-box;
+    position:relative;
+    justify-content:space-between;
+    display: flex;
+    background-color: black;
+}
+.left-side{
+    display: flex;
+    align-items: center;
+    gap:5%;
+}
+.left-side a{
+    text-decoration: none;
+    color:aliceblue;
+    font-size:30px;
+}
+.left-side img{
+    border-radius:50%;
+    width:70px;
+    height: 70px;
+}
+.left-side img:hover{
+    width:100px;
+    height:100px;
+}
+.left-side .spotify{
+    color: aliceblue;
+}
+.left-side .a2{
+    margin-left:15px;
+}
+.right-side{
+    display: flex;
+    align-items: center;
+    width: 370px;
+    gap:10%;
+}
+.right-side .search-box{
+    position: relative;
+}
+.search{
+    background-color:green;
+    outline:none ;
+    height: 25px;
+    width: 200px;
+}
+::placeholder{
+    color: #fff;
+}
+#search{
+    position: absolute;
+    left: 10px;
+    top: 22%;
+    font-weight: 900;
+    color:white;
+}
+.right-side #microphone{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    color:  rgb(255, 255, 255);
+}
+#bell-icon{
+    color: white;
+}
+.right-side img{
+    border-radius: 50%;
+    width:70px;
+    height: 70px;
+}
+
+/*.....................................................*/
+
+.main-section{
+    height: calc(100% - 70px);
+    width: 100%;
+    display: flex;
+    background-color: black;
+    border:5px solid grey;
+}
+
+.left-music{
+    height:100%;
+    width:65%;
+    box-sizing: border-box;
+    border:2px solid grey;
+    overflow-y: auto;
+    
+}
+
+.left-music::-webkit-scrollbar{
+    display: none;
+}
+
+.images3{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    height:330px;
+    box-sizing: border-box;
+}
+.images3 img{
+    width: 30%;
+    height: 250px;
+    border-radius: 2px;
+    margin-top: 50px;
+}
+/*.......................................*/
+h2{
+    color: aliceblue;
+    padding-top: 10px;
+    padding-left:20px;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.latest-music{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.latest-music section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:45%;
+    height:90px;
+    margin-top:10px;
+    margin-right:10px;
+    margin-bottom:10px;
+    margin-left:10px;
+}
+
+.latest-music fig{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.latest-music fig img{
+    height:85px;
+    width:85px;
+    cursor: pointer;
+}
+
+.latest-music fig figright{
+    margin: 0px 5px;
+    font-size: 1.2rem;
+}
+
+p{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+div{
+    display: block;
+}
+.music-time h4{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+/*.......................................*/
+
+.popular-artists{
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 15px;
+    overflow-x: scroll;
+}
+.popular-artists::-webkit-scrollbar{
+    display: none;
+}
+
+.artists-name{
+     height:150px;
+     width:90px;
+     margin: 5px;
+     text-align: center;
+}
+
+.artists-name img{
+    height:90px;
+    width:90px;
+    border-radius: 50%;
+}
+
+/*.......................................*/
+
+.popular-musics{
+    margin-left: 15px;
+    display: flex;
+    position: relative;
+}
+
+.popular-musics .musics img{
+    height: 90px;
+    width:90px;
+    border-radius: 50%;
+}
+
+/*.......................................*/
+
+.musics-contaner{
+    display:flex;
+    position: relative;
+    overflow-x: scroll;
+}
+.musics-contaner::-webkit-scrollbar{
+    display: none;
+}
+
+.musics-contaner .music {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.musics-contaner .music img{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+}
+ .musics-contaner .music i{
+    position: absolute;
+    top:2.2rem;
+ }
+
+ /*.......................................*/
+ .latest-english{
+    margin-left: 12px;
+    display: flex;
+    overflow-x: scroll;
+ }
+ .latest-english::-webkit-scrollbar{
+    display: none;
+}
+
+ .latest-english section{
+    margin:10px;
+ }
+
+ .latest-english section img{
+    height: 100px;
+    width:100px;
+ }
+/*.......................................*/
+
+ .latest-hindi{
+    display: flex;
+    margin-left: 12px;
+    overflow-x: scroll;
+ }
+ .latest-hindi::-webkit-scrollbar{
+    display: none;
+}
+
+ .latest-hindi section{
+    margin: 10px;
+ }
+
+ .latest-hindi section img{
+    height:100px;
+    width:100px;
+ }
+
+ /*.......................................*/
+
+ .right{
+    width:35%;
+    height:100%;
+    border-left:2px solid gray;
+    box-sizing: border-box;
+ }
+
+ .queue{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+ }
+ 
+ .queue select{
+    border: none;
+    background-color:black;
+    color:greenyellow;
+    font-size:20px;
+    margin-right:30px;
+    font-weight:800;
+ }
+ .queue select option{
+    font-weight:500px;
+ }
+
+ .right-music{
+    width:100%;
+    height:calc(100% - 50px);
+    overflow: scroll;
+ }
+ .right-music::-webkit-scrollbar{
+    display: none;
+}
+
+ .right-music section{
+    margin:15px 0px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width:100%;
+    height:70px;
+ }
+ b{
+    color: aliceblue;
+    text-transform: capitalize;
+    font-size:20px;
+ }
+ figcaption{
+    margin-top:60px;
+    width:100px;
+    height:100px;
+ }
+ figcaption i{
+    font-style: italic;
+    color: aliceblue;
+    text-transform: capitalize;
+ }
+
+ .right-music section img{
+    height:60px;
+    width:60px;
+    border-radius:5px;
+    cursor: pointer;
+ }
+
+ .fa-regular{
+    font-weight: 400px;
+    color: aliceblue;
+ }
+
+
+ 
